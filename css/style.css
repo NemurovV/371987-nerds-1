@@ -1556,7 +1556,6 @@ a.logo-inner:active {
 	border: 0;
 
 	cursor: pointer;
-	outline: none;
 }
 
 .modal-content-close::before,
@@ -1623,8 +1622,6 @@ a.logo-inner:active {
 
 	background-color: rgb(251, 86, 90);
 	border-radius: 3px;
-
-	outline: none;
 }
 
 .modal-content .btn:hover {
