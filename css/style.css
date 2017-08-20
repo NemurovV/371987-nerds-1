@@ -1165,7 +1165,6 @@ a.logo-inner:active {
   border-radius: 3px;
 
   cursor: pointer;
-  outline: none;
 }
 
 .select-price input[type="submit"]:hover {
@@ -1324,7 +1323,6 @@ a.logo-inner:active {
   border-top-right-radius: 3px;
   cursor: pointer;
 }
-
 .product-card:nth-child(2n) {
   margin-right: 0;
 }
@@ -1665,8 +1663,6 @@ background-color: rgb(231, 66, 70);
 
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-
-	outline: none;
 }
 
 .text-form .report-title textarea[id="report"] {
