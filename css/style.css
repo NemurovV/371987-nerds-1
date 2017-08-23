@@ -20,7 +20,7 @@ body {
   clear: both;
 }
 
-.visually-hidden {
+.visually-hidden::first-line {
 	position: absolute;
 
    width: 1px;
