@@ -84,7 +84,7 @@
     </div>
   </header>
   <main class="main-content">
-    <section class="advertising container clearfix">
+    <section class="advertising container">
       <h2 class="visually-hidden">Описание услуг</h2>
 
       <article class="web-site">
@@ -122,7 +122,7 @@
     </section>
 
     <div class="container">
-      <div class="conception clearfix">
+      <div class="conception">
         <div class="definition">
           <p class="definition-slogan">
             <b>
@@ -246,16 +246,17 @@
         Напишите нам
       </h2>
 
-      <form class="text-form" action="" method="post">
-        <p class="username">
-          <label for="username"><b>Ваше имя:</b></label>
-          <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" autofocus pattern="[А-Яа-яЁё]" required/>
-        </p>
-
-        <p class="e-mail">
-          <label for="email"><b>Ваш e-mail:</b></label>
-          <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
-        </p>
+      <form class="text-form" action="/" method="post">
+        <div class="represent-data">
+          <p class="username">
+            <label for="username"><b>Ваше имя:</b></label>
+            <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" pattern="[А-Яа-яЁё]" required autofocus>
+          </p>
+          <p class="e-mail">
+            <label for="email"><b>Ваш e-mail:</b></label>
+            <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
+          </p>
+        </div>
 
         <p class="report-title">
           <label for="report"><b>Текст письма:</b></label>

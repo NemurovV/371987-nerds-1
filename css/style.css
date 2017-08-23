@@ -4,23 +4,16 @@ body {
 	padding: 0;
 
 	font-size: 16px;
-	line-height: 1.5em;
+	line-height: 24px;
 	font-family: "Roboto", "Tahoma", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	text-align: left;
 	color: rgb(40, 49, 54);
 
 	background-color: rgb(255, 255, 255);
 }
 
-.clearfix {
-  content: "";
-
-  display: table;
-  clear: both;
-}
-
-.visually-hidden::first-line {
+.visually-hidden {
 	position: absolute;
 
    width: 1px;
@@ -56,7 +49,9 @@ body {
 .header-top {
 	display: inline-block;
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 12px;
+
+  vertical-align: top;
 }
 
 .logo-index {
@@ -86,8 +81,10 @@ body {
 	padding: 0;
 
   font-size:16px;
-  line-height: 1.875em;
+  line-height: 30px;
 	font-weight: 500;
+  vertical-align: top;
+
 }
 
 .main-navigation a {
@@ -123,10 +120,10 @@ body {
 .basket {
 	float: right;
 	width: 160px;
-	padding-top: 43px;
+	padding-top: 36px;
 
 	font-size: 16px;
-	line-height: 1em;
+	line-height: 30px;
 	font-weight: 500;
 	text-align: right;
 }
@@ -184,7 +181,7 @@ body {
 	padding: 0;
 	font-style: normal;
 	font-size: 55px;
-	line-height: 1em;
+	line-height: 55px;
 	font-weight: 500;
 }
 
@@ -193,7 +190,7 @@ body {
 	margin-top: 26px;
 	font-style: normal;
 	font-size: 16px;
-	line-height: 1.5em;
+	line-height: 24px;
 	text-align: left;
 }
 
@@ -201,12 +198,12 @@ body {
 	display: inline-block;
 
 	margin: 0;
-	margin-top: 40px;
+	margin-top: 39px;
 	margin-left: 1px;
-	padding: 15px 55px 15px 54px;
+	padding: 17px 55px 15px 54px;
 	font-style: normal;
 	font-size: 16px;
-	line-height: 1.2em;
+	line-height: 18px;
 	vertical-align: top;
 	text-align: center;
 	word-wrap: break-word;
@@ -239,40 +236,42 @@ body {
 }
 
 .advertising {
- width: 100%;
- margin-bottom: 39px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 39px;
 
- text-align: left;
+  text-align: left;
 
- border-bottom: 2px solid rgb(238, 238, 238);
+  border-bottom: 2px solid rgb(238, 238, 238);
+
+  justify-content: space-between;
 }
 
 .advertising article {
-	float: left;
-	width: 25.86%;
-	margin-right: 8.6%;
-}
-
-.advertising article:last-child {
-	margin-right: 0;
+	width: 300px;
+	margin-right: 100px;
 }
 
 .advertising img {
 	display: inline-block;
 	margin: 0;
+  margin-bottom: 25px;
 	padding: 0;
-	margin-bottom: 10px;
+
+  vertical-align: top;
+
 }
 
 .advertising h2 {
+  display: inline-block;
 	margin: 0;
-	margin-bottom: 9px;
+	margin-bottom: 16px;
 	padding: 0;
 
-	font-style: normal;
 	font-size: 24px;
-	line-height: 1.875em;
+	line-height: 30px;
 	font-weight: 600;
+  vertical-align: top;
 	text-transform: uppercase;
 
 }
@@ -283,11 +282,8 @@ body {
 	margin-bottom: 31px;
 	padding: 0;
 
-	font-size: 16px;
-	line-height: 1.5em;
-	font-family: "Roboto", "Tahoma", sans-serif;
-	letter-spacing: normal;
-	font-weight: 400;
+  vertical-align: top;
+
 }
 
 
@@ -296,10 +292,10 @@ body {
 
 	margin: 0;
 	margin-bottom: 79px;
-	padding: 14px 40px 14px 40px;
+	padding: 15px 40px 13px 40px;
 	font-style: normal;
 	font-size: 16px;
-	line-height: 1.5em;
+	line-height: 24px;
 	vertical-align: top;
 	letter-spacing: normal;
 	text-align: center;
@@ -356,6 +352,9 @@ body {
 }
 
 .conception {
+  display: flex;
+  justify-content: space-between;
+
 	width: 100%;
 	margin-bottom: 53px;
 	padding-bottom: 1px;
@@ -365,7 +364,6 @@ body {
 
 .definition  {
   position: relative;
-  float: left;
   max-width: 680px;
   margin-bottom: 44px;
 }
@@ -377,8 +375,7 @@ body {
 	padding: 0;
 
   font-size: 45px;
-  line-height: 1em;
-  font-family: "Roboto", "Tahoma", sans-serif;
+  line-height: 45px;
   font-weight: 500;
   color: rgb(0, 0, 0);
 }
@@ -386,13 +383,8 @@ body {
 .definition-text {
   margin: 0;
 	margin-bottom: 39px;
-
   padding: 0;
 
-  font-size: 16px;
-  line-height: 1.5em;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: 400;
 	letter-spacing: 0.05px;
   color: rgb(0, 0, 0);
 }
@@ -403,8 +395,7 @@ body {
 
 
   font-size: 16px;
-  line-height: 1.5em;
-  font-family: "Roboto", "Tahoma", sans-serif;
+  line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
 	letter-spacing: 0.11px;
@@ -420,10 +411,9 @@ body {
   padding: 16px 0;
 
   font-size: 16px;
-  line-height: 3em;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: 400;
+  line-height: 48px;
   list-style: none;
+  vertical-align: top;
   color: rgb(0, 0, 0);
 }
 
@@ -479,7 +469,7 @@ body {
   padding: 0;
 
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 24px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -502,17 +492,16 @@ body {
   padding: 0;
 
   font-size: 45px;
-  line-height:1em;
-  font-family: "Roboto", "Tahoma", sans-serif;
+  line-height:45px;
   font-weight: bold;
   list-style: none;
+  vertical-align: top;
   color: rgb(0, 0, 0);
 }
 
 .our-level sup {
   font-size: 26px;
-  line-height: 0.6em;
-  font-family: "Roboto", "Tahoma", sans-serif;
+  line-height: 14px;
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
@@ -520,12 +509,12 @@ body {
 .our-level p {
   width: 98px;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 20px;
   margin-left: -39px;
   padding: 0;
 
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 18px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 400;
   color: rgb(0, 0, 0);
@@ -548,10 +537,10 @@ body {
 	width: 100%;
   display: inline-block;
 	margin: 0;
-  margin-bottom: 73px;
+  margin-bottom: 80px;
 	padding: 0;
 
-  vertical-align: baseline;
+  vertical-align: top;
   text-align: center;
 
 	border-bottom: 2px solid rgb(238, 238, 238);
@@ -651,41 +640,42 @@ iframe {
 
 .feedback-wrapper {
 	position: absolute;
-	top: -369px;
+	top: -368px;
 	left: 0px;
 
 	display: inline-block;
 	width: 270px;
-	padding-top: 52px;
+	padding-top: 54px;
 	padding-left: 50px;
+
+  vertical-align: top;
 
 	background-color: rgb(255, 255, 255);
 }
 
 .feedback-wrapper h3 {
+  display: inline-block;
 	margin: 0;
-	margin-bottom: 23px;
+	margin-bottom: 29px;
 	padding: 0;
 
 	font-size: 18px;
-	line-height: 1.5em;
-	font-family: "Roboto", "Tahoma", sans-serif;
+	line-height: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
+  vertical-align: top;
 	color: rgb(0, 0, 0);
 }
 
 .feedback-wrapper p {
-	display: block;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	padding-left: 2px;
 	padding-bottom: 18px;
 
-	font-size: 16px;
-	line-height: 1.15em;
-	font-family: "Roboto", "Tahoma", sans-serif;
-	font-weight: 400;
+  line-height: 18px;
+  vertical-align: top;
 	color: rgb(0, 0, 0);
 }
 
@@ -696,6 +686,7 @@ iframe {
 	margin-top: 18px;
 	padding: 15px 45px 13px 44px;
 
+  vertical-align: top;
 	color: #ffffff;
 
 	background-color: rgb(251, 86, 90);
@@ -779,9 +770,10 @@ iframe {
    padding-top: 6px;
 
    font-size: 36px;
-   line-height: 1em;
+   line-height: 36px;
    font-family: "Roboto", "Tahoma", sans-serif;
    font-weight: bold;
+   vertical-align: top;
    color: rgb(0, 0, 0);
 	 letter-spacing: 0.2px;
  }
@@ -790,18 +782,19 @@ iframe {
    display: inline-block;
    margin: 0;
    padding: 0;
-   padding-top: 10px;
+   padding-top: 12px;
 
    font-size: 16px;
-   line-height: 1.3;
+   line-height: 18px;
    font-family: "Roboto", "Tahoma", sans-serif;
    font-weight: 400;
+   vertical-align: top;
    color: rgb(0, 0, 0);
  }
  	/*----------------------------------------------------------------------*/
 	/* Начало! вторая страница inner*/
 .page-header {
-  margin-bottom: 57px;
+  margin-bottom: 58px;
 	padding-top: 38px;
 
   background-color: rgb(238, 238, 238);
@@ -833,21 +826,23 @@ a.logo-inner:active {
 	margin-bottom: 96px;
 
 	font-size: 55px;
-	line-height: 1em;
+	line-height: 55px;
 	font-weight: 500;
 	vertical-align: top;
 	text-align: center;
 }
 
 .catalog {
+  display: flex;
+  justify-content: flex-start;
 	width: 100%;
 }
 
 .filters-products {
-	float: left;
  	width: 280px;
 	margin-top: 2px;
-	margin-left: auto;
+	margin-right: 122px;
+
 }
 
 .range-filters {
@@ -860,12 +855,11 @@ a.logo-inner:active {
 
 .range-filters legend {
  	margin: 0;
-	margin-bottom: 51px;
+	margin-bottom: 53px;
  	padding: 0;
 
  	font-size: 18px;
- 	line-height: 1.333em;
- 	font-family: "Roboto", "Tahoma", sans-serif;
+  line-height: 20px;
  	font-weight: bold;
 	letter-spacing: 0.8px;
  	text-transform: uppercase;
@@ -940,9 +934,10 @@ a.logo-inner:active {
   display: inline-block;
   width: 50%;
   font-size: 16px;
-  line-height: 1.375em;
+  line-height: 22px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 400;
+  vertical-align: top;
 	text-transform: uppercase;
 
 }
@@ -969,7 +964,7 @@ a.logo-inner:active {
   padding: 8px 9px 8px 11px;
 
   font-size: 16px;
-  line-height: 1.375em;
+  line-height: 22px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 400;
 	vertical-align: baseline;
@@ -993,12 +988,12 @@ a.logo-inner:active {
 .filters-layout legend,
 .filters-features legend {
  	margin: 0;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 
  	padding: 0;
 
  	font-size: 18px;
- 	line-height: 1.333em;
+ 	line-height: 22px;
  	font-family: "Roboto", "Tahoma", sans-serif;
  	font-weight: bold;
  	text-transform: uppercase;
@@ -1018,7 +1013,7 @@ a.logo-inner:active {
   padding-left: 37px;
 
   font-size: 16px;
-  line-height: 1.5625em;
+  line-height: 25px;
   font-weight: 400;
 }
 
@@ -1093,7 +1088,7 @@ a.logo-inner:active {
   padding-left: 36px;
 
   font-size: 16px;
-  line-height: 1.4375em;
+  line-height: 23px;
   font-weight: 400;
 }
 
@@ -1109,8 +1104,8 @@ a.logo-inner:active {
   top: 0;
   left: 1px;
 
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
 
   border: 2px solid rgb(184, 184, 184);
   border-radius: 4px;
@@ -1154,7 +1149,7 @@ a.logo-inner:active {
   padding: 17px 88px 15px 90px;
 
   font-size: 15px;
-  line-height: 1.125em;
+  line-height: 18px;
   font-weight: bold;
 	letter-spacing: 0px;
   text-transform: uppercase;
@@ -1179,30 +1174,35 @@ a.logo-inner:active {
 }
 
 .catalog-products {
-  float: right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
   width: 760px;
+}
+
+.catalog-filters {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.catalog-products b {
+  margin-left: 1px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .catalog-navigation {
   margin: 0;
+  margin-top: 2px;
+  margin-left: 254px;
   padding: 0;
-}
 
-.catalog-products b {
-  float: left;
-
-  font-size: 18px;
-  line-height: 1em;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-
-}
-
-.catalog-navigation {
-  float: left;
-  margin-top: 3px;
-  margin-left: 256px;
 }
 
 .catalog-navigation .active {
@@ -1213,6 +1213,7 @@ a.logo-inner:active {
   display: inline-block;
   padding: 0 10px;
 
+  vertical-align: top;
   list-style: none;
 }
 
@@ -1237,7 +1238,6 @@ a.logo-inner:active {
 }
 
 .catalog-products .arrows {
-  float: right;
   margin-top: -2px;
 
 	font-size: 15px;
@@ -1265,23 +1265,31 @@ a.logo-inner:active {
 
 .arrows .icon-down-arrow {
   display: inline-block;
-  margin-left: 34px;
-  padding: 3px;
-  width: 5px;
-  height: 5px;
+  margin-left: 36px;
+  width: 0;
+  height: 0;
+
+  vertical-align: top;
 }
 
 .arrows .icon-up-arrow {
   display: inline-block;
-  margin-left: 14px;
-  padding: 3px;
-  width: 5px;
-  height: 5px;
+  margin-left: 25px;
+  margin-right: 13px;
+  width: 0px;
+  height: 0px;
+
+  vertical-align: top;
 }
 
 .catalog-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 760px;
   margin-top: 50px;
-	margin-bottom: 24px;
+	margin-bottom: 27px;
 }
 
 .catalog-slider-controls {
@@ -1311,11 +1319,9 @@ a.logo-inner:active {
 .product-card {
   position: relative;
 
-  float: left;
 	max-width: 358px;
 	height: 574px;
-  margin-right: 40px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 
 	border: 1px solid rgb(238, 238, 238);
   border-top: 40px solid rgb(233, 233, 233);
@@ -1323,19 +1329,11 @@ a.logo-inner:active {
   border-top-right-radius: 3px;
   cursor: pointer;
 }
-.product-card:nth-child(2n) {
-  margin-right: 0;
-}
-
-.product-card:nth-child(3),
-.product-card:nth-child(4) {
-  margin-bottom: 31px;
-}
 
 .product-card .popup-card {
 	display: inline-block;
   position: absolute;
-  bottom: -1px;
+  bottom: 0px;
 	left: 0;
   z-index: 50;
 
@@ -1343,29 +1341,28 @@ a.logo-inner:active {
 	width: 358px;
 	min-height: 230px;
 
+  vertical-align: top;
+
   background-color: rgb(238, 238, 238);
 }
 
-.product-card:hover .popup-card {
-  display: inline-block;
-	text-align: center;
-}
-
+.product-card:hover .popup-card,
 .product-card .popup-card.active {
   display: inline-block;
+
+  vertical-align: top;
 	text-align: center;
 }
 
 .product-card .popup-card h3 {
-	display: block;
+	display: inline-block;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 14px;
+  margin-top: 27px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-size: 18px;
-  line-height: 1.875em;
-  font-family: "Roboto", "Tahoma", sans-serif;
+  line-height: 30px;
   font-weight: bold;
   vertical-align: top;
 	text-align: center;
@@ -1373,14 +1370,12 @@ a.logo-inner:active {
 }
 
 .product-card .popup-card p {
+  display: inline-block;
   margin: 0 50px;
   padding: 0;
 
-
   font-size: 16px;
-  line-height: 1.125em;
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: 400;
+  line-height: 18px;
   vertical-align: top;
   text-align: center;
 }
@@ -1410,13 +1405,13 @@ a.logo-inner:active {
 
 .card-btn {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 31px;
   padding: 16px 60px;
 
   font-size: 16px;
-  line-height: 1.125em;
+  line-height: 18px;
   font-family: "Roboto", "Tahoma", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   vertical-align: top;
   text-align: center;
   text-transform: uppercase;
@@ -1465,7 +1460,7 @@ a.logo-inner:active {
 
 .pagination a {
   font-size: 16px;
-  line-height: 1.125em;
+  line-height: 18px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -1595,7 +1590,7 @@ a.logo-inner:active {
 	padding: 0;
 
 	font-size: 45px;
-	line-height: 1em;
+	line-height: 45px;
 	font-weight: 500;
 }
 
@@ -1616,6 +1611,7 @@ a.logo-inner:active {
 	margin-top: 47px;
 	padding: 17px 80px;
 
+  vertical-align: top;
 	color: rgb(255, 255, 255);
 
 	background-color: rgb(251, 86, 90);
@@ -1642,8 +1638,10 @@ background-color: rgb(231, 66, 70);
 	display: block;
 }
 
-.text-form .username {
-	float: left;
+.text-form .represent-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .text-form .username input[type="text"],

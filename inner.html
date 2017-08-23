@@ -44,8 +44,8 @@
 
     <main  class="page-content">
 
-      <div class="catalog container clearfix">
-        <section class="filters-products">
+      <div class="catalog container">
+        <div class="filters-products">
           <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="select-price" action="/" method="get">
 
@@ -123,11 +123,11 @@
               </fieldset>
               <input type="submit" name="btn" value="Показать">
             </form>
-        </section>
+        </div>
 
         <section class="catalog-products">
           <h2 class="visually-hidden">Каталог товаров</h2>
-          <div class="clearfix">
+          <div class="catalog-filters">
             <b>
               Сортировать:
             </b>
@@ -148,7 +148,7 @@
             </div>
           </div>
 
-          <div class="catalog-items clearfix">
+          <div class="catalog-items">
             <div class="product-card sedona ">
               <div class="catalog-slider-controls">
                 <i></i>
@@ -322,21 +322,24 @@
     </footer>
     <!-- HTML-код модального окна НАЧАЛО-->
     <div class="modal" id="openModal">
-      <div class="modal-content clearfix">
+      <div class="modal-content">
         <a class="modal-content-close" href="#close" title="Закрыть">Закрыть
         </a>
         <h2 class="modal-content-title">
           Напишите нам
         </h2>
         <form class="text-form" action="/" method="post">
-          <p class="username">
-            <label for="username"><b>Ваше имя:</b></label>
-            <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" pattern="[А-Яа-яЁё]" required autofocus>
-          </p>
-          <p class="e-mail">
-            <label for="email"><b>Ваш e-mail:</b></label>
-            <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
-          </p>
+          <div class="represent-data">
+            <p class="username">
+              <label for="username"><b>Ваше имя:</b></label>
+              <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" pattern="[А-Яа-яЁё]" required autofocus>
+            </p>
+            <p class="e-mail">
+              <label for="email"><b>Ваш e-mail:</b></label>
+              <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
+            </p>
+          </div>
+
           <p class="report-title">
             <label for="report"><b>Текст письма:</b></label>
             <textarea id="report" name="report" rows="5" placeholder="В свободной форме"></textarea>
