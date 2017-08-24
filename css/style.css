@@ -16,9 +16,7 @@ body {
 .visually-hidden {
 	position: absolute;
 
-   width: 1px;
-   height: 1px;
-   margin: -1px;
+   width: 1px;   margin: -1px;
    border: 0;
    padding: 0;
 
@@ -33,7 +31,7 @@ body {
 }
 
  a {
-	color: rgb(40, 49, 54);
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -47,26 +45,30 @@ body {
 }
 
 .header-top {
-	display: inline-block;
-	width: 100%;
+	display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
 	margin-bottom: 12px;
 
   vertical-align: top;
 }
 
 .logo-index {
-	float: left;
+  align-self: flex-start;
+
   width: 160px;
   min-height: 65px;
 	margin: 0;
-	margin-right: 42px;
-  padding-top: 10px;
+  margin-top: 10px;
+	margin-right: 4px;
 }
 
 .main-navigation {
-  float: left;
+  align-self: center;
   max-width: 660px;
-  margin-left: 160px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .main-navigation ul {
@@ -77,7 +79,6 @@ body {
 .main-navigation li {
   display: inline-block;
 	margin-right: 42px;
-  margin-top: 36px;
 	padding: 0;
 
   font-size:16px;
@@ -97,12 +98,12 @@ body {
 }
 
 .main-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
 }
 
 .main-navigation .active {
   position: relative;
-
 }
 
 .main-navigation .active::after {
@@ -118,7 +119,6 @@ body {
 }
 
 .basket {
-	float: right;
 	width: 160px;
 	padding-top: 36px;
 
@@ -150,14 +150,14 @@ body {
   width: 18px;
   height: 18px;
 
-  background-image: url("../img/sprite.png");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
-  background-position: -450px -30px;
-  opacity: 0.2;
 }
 
 .my-slider {
+  display: inline-block;
 	position: relative;
+  vertical-align: top;
 }
 
 .my-slider .sliders-text {
@@ -166,8 +166,7 @@ body {
 }
 
 .my-slider img {
-  float: right;
-	margin-right: 30px;
+  margin-left: 431px;
 
 }
 
@@ -230,7 +229,7 @@ body {
 
 .unslider-nav {
 	position: relative;
-	bottom: 115px;
+	bottom: 129px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -356,7 +355,7 @@ body {
   justify-content: space-between;
 
 	width: 100%;
-	margin-bottom: 53px;
+	margin-bottom: 46px;
 	padding-bottom: 1px;
 
 	border-bottom: 2px solid rgb(238, 238, 238);
@@ -533,9 +532,12 @@ body {
 }
 
 .brand-partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
 	position: relative;
 	width: 100%;
-  display: inline-block;
 	margin: 0;
   margin-bottom: 80px;
 	padding: 0;
@@ -547,13 +549,12 @@ body {
 }
 
 .img-brand {
-  float: left;
+
   width: 230px;
   height: 90px;
-  margin-right: 70px;
 	margin-bottom: 25px;
 
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .img-brand:hover {
@@ -561,31 +562,31 @@ body {
 }
 
 .img-brand:active {
-  opacity: 0.2;
-}
-
-.img-brand:last-child {
-  margin-right: 0;
+  opacity: 0.1;
 }
 
 .img-brand:first-child {
-  padding-top: 10px;
-  padding-left: 17px;
+  padding-top: 16px;
+  padding-left: 16px;
 }
 
-.img-brand:nth-child(2) {
-  margin-top: -6px;
+.img-brand:nth-child(4) {
+  padding-top: 19px;
 }
 
 .img-brand:nth-child(3) {
-  padding-top: 12px;
+}
+
+.img-brand:last-child {
+  padding-top: 6px;
+  padding-right: 14px
 }
 
 .basket-btn:hover {
 	color: #f45a40;
 }
 
-.img-brand:first-child::before {
+.brand-partners::before {
   content: "";
 
   position: absolute;
@@ -595,12 +596,10 @@ body {
   width: 2px;
   height: 53px;
 
-  background-color: rgb(228, 228, 228);
+	background-color: rgb(238, 238, 238);
 }
 
-.img-brand:nth-child(2)::before  {
-  content: "";
-
+.brand-partners .straight-line {
   position: absolute;
   bottom: 65px;
   left: 578px;
@@ -608,10 +607,10 @@ body {
   width: 2px;
   height: 53px;
 
-  background-color: rgb(228, 228, 228);
+	background-color: rgb(238, 238, 238);
 }
 
-.img-brand:nth-child(2)::after {
+.brand-partners::after {
   content: "";
 
   position: absolute;
@@ -621,7 +620,7 @@ body {
   width: 2px;
   height: 53px;
 
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(238, 238, 238);
 }
 
 iframe {
@@ -711,19 +710,19 @@ iframe {
 }
 
 .block-footer {
+  display: flex;
+  justify-content: space-between;
+
 	width: 100%;
 	margin-bottom: 65px;
 	padding-top: 62px;
 }
 
 .footer-social {
-  float: left;
   width: 280px;
-	margin-right: 120px;
-
 }
 
-.social-btn {
+.footer-social .social-btn {
   display: inline-block;
   width: 79px;
   height: 79px;
@@ -733,36 +732,45 @@ iframe {
   vertical-align: top;
   text-align: center;
 
-  background: rgb(238, 238, 238) url("../img/sprite.png") no-repeat center;
-  border-radius: 50%
-}
-
-.social-btn:hover {
-  background: rgb(231, 66, 70) url("../img/sprite.png") no-repeat center;
+  background-color: rgb(238, 238, 238);
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
-}
 
-.social-btn:active {
-  background: rgb(215, 55, 59) url("../img/sprite.png") no-repeat center;
-  border-radius: 50%;
-  box-shadow: inset 0 20px 20px 50px rgba(231, 66, 70, 0.7), inset 0 4px 0 0 rgb(153, 49, 53);
 }
 
 .social-btn.vk {
-  background-position: -962px 2px;
-}
-
-.social-btn.fb {
-  background-position: -578px -2px;
+  background-image: url("../img/vk-icon.svg");
 }
 
 .social-btn.inst {
-  background-position: -654px -2px;
+  background-image: url("../img/vk-icon.svg");
 }
 
+
+ .social-btn.fb {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.social-btn.vk:hover,
+.social-btn.fb:hover,
+.social-btn.inst:hover {
+ background-color: rgb(231, 66, 70);
+}
+
+.social-btn.vk:active,
+.social-btn.fb:active,
+.social-btn.inst:active {
+  background-color: rgb(215, 55, 59);
+  box-shadow: inset 0 20px 20px 50px rgba(231, 66, 70, 0.7),
+              inset 0 4px 0 0 rgb(153, 49, 53);
+}
+
+
 .footer-text {
-  float: left;
   width: 620px;
+  margin-right: 140px;
+
  }
 
  .footer-text b {
@@ -801,7 +809,6 @@ iframe {
 }
 
 .logo-inner {
-	float: left;
   width: 160px;
   min-height: 65px;
 	margin: 0;
@@ -810,26 +817,34 @@ iframe {
 }
 
 a.logo-inner:hover {
-	 background: url("img/logo-nerds.png") no-repeat;
-	 opacity: 0.8;
+	 background: url("img/nerds-logo.svg") no-repeat;
 }
 
 a.logo-inner:active {
-  background: url("img/logo-nerds.png") no-repeat;
+  background: url("img/nerds-logo.svg") no-repeat;
   opacity: 0.3;
 }
 
-.header-top h1 {
-	float: left;
-	margin-top: 88px;
-	margin-left: 14px;
-	margin-bottom: 96px;
+.main-navigation.inner {
+  margin-top: 22px;
+  margin-left: 3px;
+}
+
+.header-bottom {
+  display: inline-block;
+  width: 100%;
+	vertical-align: top;
+	text-align: center;
+}
+
+.header-bottom h1 {
+display: inline-block;
+	margin-top: 60px;
+	margin-bottom: 108px;
 
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
-	vertical-align: top;
-	text-align: center;
 }
 
 .catalog {
