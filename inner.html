@@ -276,11 +276,11 @@
           <div class="represent-data">
             <p class="username">
               <label for="username">Ваше имя:</label>
-              <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" required autofocus>
+              <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста">
             </p>
             <p class="e-mail">
               <label for="email">Ваш e-mail:</label>
-              <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
+              <input type="email" name="email" id="email" placeholder="Для отправки ответа">
             </p>
           </div>
 
@@ -291,23 +291,6 @@
           <input type="submit" class="btn" name="btn" value="Отправить">
         </form>
       </div>
-    <!-- HTML-код модального окна КОНЕЦ-->
-    <script>
-      var link = document.querySelector(".modal-content-open");
-
-      var popup = document.querySelector(".modal-content");
-      var close = popup.querySelector(".modal-content-close");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-      });
-
-     </script>
+      <script src="js/script.js"></script>
   </body>
 </html>

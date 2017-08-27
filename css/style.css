@@ -704,6 +704,8 @@ iframe {
 
   background-color: rgb(251, 86, 90);
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .contact-main .btn:hover {
@@ -1531,8 +1533,54 @@ a.logo-inner:active {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
 }
 
+@keyframes bouce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-content-show {
   display: block;
+  animation-name: bouce;
+  animation-duration: 0.8s;
+}
+
+@keyframes shake {
+  0%, 100 {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .modal-content-close {
@@ -1616,6 +1664,8 @@ a.logo-inner:active {
   background-color: rgb(251, 86, 90);
   border: none;
   border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .modal-content .btn:hover {
