@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,42 +16,28 @@
           </a>
           <nav class="main-navigation inner">
             <ul class="nav-list">
-              <li>
-                <a href="#">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a class="active" href="#">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a class="active" href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="basket">
-            <a href="#"><span class="icon-basket"></span>Корзина</a>
+            <a href="#">Корзина</a>
           </div>
         </div>
 
-        <div class="header-bottom">
-          <h1>
-           Магазин готовых шаблонов
-          </h1>
-        </div>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
 
-    <main  class="page-content">
+    <main class="page-content">
       <div class="catalog container">
         <div class="filters-products">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="select-price" action="/" method="get">
+            <form class="select-price" action="https://htmlacademy.ru" method="get">
               <fieldset class="range-filters">
-                <legend>
-                  Стоимость:
-                </legend>
+                <legend>Стоимость:</legend>
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar">
@@ -63,23 +49,20 @@
                   </div>
                 </div>
 
-                <section class="price-controls">
-                  <h2 class="visually-hidden">Выбора цены</h2>
+                <div class="price-controls">
                   <label class="price-min">
-          					<span>от</span>
+          		      <span>от</span>
                     <input class="price-min" type="text" name="price-min" value="0">
                   </label>
                   <label class="price-max">
                     <span>до</span>
                     <input class="price-max" type="text" name="price-max" value="15 000">
                   </label>
-               </section>
+               </div>
               </fieldset>
 
               <fieldset class="filters-layout">
-                <legend>
-                  Сетка:
-                </legend>
+                <legend>Сетка:</legend>
                 <p>
                   <input type="radio" name="radio" id="adaptive" value="adaptive" checked>
                   <label for="adaptive">Адаптивная</label>
@@ -94,9 +77,7 @@
                 </p>
               </fieldset>
               <fieldset class="filters-features">
-                <legend>
-                  Особенности:
-                </legend>
+                <legend>Особенности:</legend>
                   <p>
                     <input type="checkbox" checked name="slider" id="slider" disabled>
                     <label for="slider">Слайдер</label>
@@ -125,19 +106,11 @@
         <section class="catalog-products">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="catalog-filters">
-            <b>
-              Сортировать:
-            </b>
+            <b>Сортировать:</b>
             <ul class="catalog-navigation">
-              <li>
-                <a class="active" href="#">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По названию</a>
-              </li>
+              <li><a class="active" href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
             </ul>
             <div class="arrows">
               <a class="icon-down-arrow active" href="#">&#9660;</a>
@@ -146,7 +119,7 @@
           </div>
 
           <div class="catalog-items">
-            <div class="product-card sedona ">
+            <div class="product-card sedona">
               <div class="catalog-slider-controls">
                 <i></i>
                 <i></i>
@@ -161,7 +134,7 @@
                   Информационный сайт
                   для туристов
                 </p>
-                <a class="card-btn sedona" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn sedona" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product-card pink">
@@ -172,14 +145,12 @@
               </div>
               <img src="img/img-pink.jpg" alt="Карточка сайта Розовый" width="358" height="574">
               <div class="popup-card">
-                <h3>
-                  Pink App
-                </h3>
+                <h3>Pink App</h3>
                 <p>
                   Продуктовый лендинг
                   приложения для iOS и Android
                 </p>
-                <a class="card-btn pink" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn pink" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product-card barbershop">
@@ -190,14 +161,12 @@
               </div>
               <img src="img/img-barbershop.jpg" width="358" height="574" alt="Карточка сайта Парикмахерская">
               <div class="popup-card">
-                <h3>
-                  Barbershop
-                </h3>
+                <h3>Barbershop</h3>
                 <p>
                   Сайт салона красоты.
                   Для мужчин, да.
                 </p>
-                <a class="card-btn barbershop" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn barbershop" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product-card mishka">
@@ -208,14 +177,12 @@
               </div>
               <img src="img/img-mishka.jpg" width="358" height="574" alt="Карточка сайта Мишка">
               <div class="popup-card">
-                <h3>
-                  Mishka
-                </h3>
+                <h3>Mishka</h3>
                 <p>
                   Интернет-магазин
                   вязаных игрушек
                 </p>
-                <a class="card-btn mishka" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn mishka" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product-card a-plus">
@@ -226,14 +193,12 @@
               </div>
               <img src="img/img-aplus.jpg"  width="358" height="574" alt="Карточка сайта А+">
               <div class="popup-card">
-                <h3>
-                  A Plus
-                </h3>
+                <h3>A Plus</h3>
                 <p>
                   Лендинг курсов повышения
                   квалификации
                 </p>
-                <a class="card-btn a-plus" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn a-plus" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product-card kvast">
@@ -244,62 +209,45 @@
               </div>
               <img src="img/img-kvast.jpg" width="358" height="574" alt="Карточка сайта Кваст">
               <div class="popup-card">
-                <h3>
-                  Кваст
-                </h3>
+                <h3>Кваст</h3>
                 <p>
                   Промо-сайт производителя
                   крафтового кваса
                 </p>
-                <a class="card-btn kvast" href="#"><span>9 900 руб.</span></a>
+                <a class="card-btn kvast" href="#">9 900 руб.</a>
               </div>
             </div>
           </div>
 
           <ul class="pagination">
-            <li class="active">
-              <a class="btn-page" href="#">1</a>
-            </li>
-            <li>
-              <a class="btn-page" href="#">2</a>
-            </li>
-            <li>
-              <a class="btn-page" href="#">3</a>
-            </li>
-            <li>
-              <a class="btn-page" href="#">Следующая</a>
-            </li>
+            <li class="active"><a class="btn-page" href="#">1</a></li>
+            <li><a class="btn-page" href="#">2</a></li>
+            <li><a class="btn-page" href="#">3</a></li>
+            <li><a class="btn-page" href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
 
-      <section class="contakt-main">
-        <h2 class="visually-hidden">!</h2>
-        <div class="custom-map">
+      <div class="custom-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894616364164!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1500821707314" allowfullscreen></iframe>
-        </div>
 
         <div class=" container">
-        	<article class="contakt-block">
-            <div class="feedback-wrapper">
-              <h3>
-                Nёrds design studio
-              </h3>
-              <p>
-                191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
-              </p>
-              <p>
-                тел. +7 (812) 275-75-75
-              </p>
-              <a class="btn" href="#openModal">Напишите нам</a>
-            </div>
-          </article>
+          <section class="contact-main">
+            <h3>Nёrds design studio</h3>
+            <p>
+              191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <a class="btn modal-content-open">Напишите нам</a>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="main-footer">
-      <div class="block-footer container clearfix">
+      <div class="block-footer container">
         <section class="footer-social">
           <h2 class="visually-hidden">!</h2>
           <a class="social-btn vk" href="#">Вконтакте</a>
@@ -318,33 +266,48 @@
       </div>
     </footer>
     <!-- HTML-код модального окна НАЧАЛО-->
-    <div class="modal" id="openModal">
       <div class="modal-content">
-        <a class="modal-content-close" href="#close" title="Закрыть">Закрыть
-        </a>
-        <h2 class="modal-content-title">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <p class="modal-content-title">
           Напишите нам
-        </h2>
-        <form class="text-form" action="/" method="post">
+        </p>
+
+        <form class="text-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="represent-data">
             <p class="username">
-              <label for="username"><b>Ваше имя:</b></label>
-              <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" pattern="[А-Яа-яЁё]" required autofocus>
+              <label for="username">Ваше имя:</label>
+              <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" required autofocus>
             </p>
             <p class="e-mail">
-              <label for="email"><b>Ваш e-mail:</b></label>
-              <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
+              <label for="email">Ваш e-mail:</label>
+              <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
             </p>
           </div>
 
           <p class="report-title">
-            <label for="report"><b>Текст письма:</b></label>
+            <label for="report">Текст письма:</label>
             <textarea id="report" name="report" rows="5" placeholder="В свободной форме"></textarea>
           </p>
-          <a class="btn" href="#">Отправить</a>
+          <input type="submit" class="btn" name="btn" value="Отправить">
         </form>
       </div>
-    </div>
     <!-- HTML-код модального окна КОНЕЦ-->
+    <script>
+      var link = document.querySelector(".modal-content-open");
+
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+
+     </script>
   </body>
 </html>
