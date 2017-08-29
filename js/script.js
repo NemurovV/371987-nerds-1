@@ -9,7 +9,7 @@ var form = popup.querySelector("form");
 var username = popup.querySelector("[name=username]");
 var email = popup.querySelector("[name=email]");
 
-var storage = localStorage.getItem("username", username.value);
+/*var storage = localStorage.getItem("username" username.value);*/
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -35,7 +35,7 @@ form.addEventListener("submit", function(event) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
-    localStorage.setItem("username", username.value );
+    localStorage.setItem("username", username.value);
   }
 });
 
