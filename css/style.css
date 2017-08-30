@@ -1771,9 +1771,9 @@ background-color: rgb(231, 66, 70);
   margin-bottom: -10px;
 }
 
-.text-form .username input[type="text"],
-.text-form .e-mail input[type="email"],
-.text-form .report-title textarea[id="report"] {
+.username input[type="text"],
+.e-mail input[type="email"],
+.report-title textarea[id="report"] {
   width: 360px;
   margin: 0;
   padding: 10px 15px;
@@ -1788,19 +1788,19 @@ background-color: rgb(231, 66, 70);
   border-radius: 5px;
 }
 
-.text-form .report-title textarea[id="report"] {
+.report-title textarea[id="report"] {
   width: 760px;
 }
 
-.text-form .username input[type="text"]:hover,
-.text-form .e-mail input[type="email"]:hover,
-.text-form .report-title textarea[id="report"]:hover {
+.username input[type="text"]:hover,
+.e-mail input[type="email"]:hover,
+.report-title textarea[id="report"]:hover {
   border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
-.text-form .username input[type="text"]:focus,
-.text-form .e-mail input[type="email"]:focus,
-.text-form .report-title textarea[id="report"]:focus {
+.username input[type="text"]:focus,
+.e-mail input[type="email"]:focus,
+.report-title textarea[id="report"]:focus {
   color: rgb(0, 0, 0);
 
   border: 2px solid rgb(0, 0, 0);
