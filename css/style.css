@@ -192,7 +192,11 @@ body {
   text-align:center;
 }
 
-.slider-controls i {
+.header-slider input[type="radio"] {
+ opacity: 0;
+}
+
+.slider-controls label {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -201,6 +205,7 @@ body {
   vertical-align: top;
   text-align: center;
 
+
   background-color: rgb(255, 255, 255);
   border: 5px solid rgb(255, 255, 255);
   border-radius: 50%;
@@ -208,8 +213,11 @@ body {
   cursor: pointer;
 }
 
-.slider-controls .active{
-  background-color: rgb(193, 193, 193);
+#btn1:checked ~ .slider-controls label[for="btn1"],
+#btn2:checked ~ .slider-controls label[for="btn2"],
+#btn3:checked ~ .slider-controls label[for="btn3"] {
+
+  background-color:rgb(153, 153, 153)
 }
 
 .slide {
@@ -302,8 +310,14 @@ body {
   display: none;
 }
 
-.slide:nth-child(3) {
-  display:block;
+#btn1:checked ~ .sliders .slide:nth-child(3) {
+  display: block;
+}
+#btn2:checked ~ .sliders .slide:nth-child(2) {
+  display: block;
+}
+#btn3:checked ~ .sliders .slide:nth-child(1) {
+  display: block;
 }
 /*Слайдер конец!!!-----------------------------------*/
 .features {
