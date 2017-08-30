@@ -9,7 +9,7 @@ var form = popup.querySelector("form");
 var username = popup.querySelector("[name=username]");
 var email = popup.querySelector("[name=email]");
 
-/*var storage = localStorage.getItem("username" username.value);*/
+var storage = localStorage.getItem("username");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();

@@ -53,7 +53,6 @@ body {
   width: 100%;
 }
 
-
 .main-header-logo {
   width: 200px;
   height: 65px;
@@ -139,9 +138,8 @@ body {
 
   display: inline-block;
   margin: 0;
-  padding: 0;
-
   margin-top: 29px;
+  padding: 0;
 
   vertical-align: top;
   text-decoration: none;
@@ -209,6 +207,7 @@ body {
 
   cursor: pointer;
 }
+
 .slider-controls .active{
   background-color: rgb(193, 193, 193);
 }
@@ -617,7 +616,6 @@ body {
 }
 
 .img-brand {
-
   width: 230px;
   height: 90px;
   margin-bottom: 44px;
@@ -807,7 +805,7 @@ iframe {
 }
 
 .social-btn.inst {
-  background-image: url("../img/vk-icon.svg");
+  background-image: url("../img/insta-icon.svg");
 }
 
 .social-btn.fb {
@@ -857,7 +855,7 @@ iframe {
   vertical-align: top;
   color: rgb(0, 0, 0);
  }
- /*Вторая страница начало!!! inner---------------------------------*/
+/*Вторая страница начало!!! inner---------------------------------*/
 /.logo-inner {
   width: 160px;
   min-height: 65px;
@@ -868,6 +866,7 @@ iframe {
 .main-page .main-header {
   margin-bottom: 58px;
 }
+
 .logo-inner:hover {
   background: url("img/nerds-logo.svg") no-repeat;
   opacity: 1;
@@ -894,6 +893,7 @@ iframe {
 .catalog {
   display: flex;
   justify-content: flex-start;
+
   width: 100%;
 }
 
@@ -1040,11 +1040,11 @@ iframe {
 
   border: 0;
 }
+
 .filters-layout legend,
 .filters-features legend {
   margin: 0;
   margin-bottom: 2px;
-
   padding: 0;
 
   font-size: 18px;
@@ -1059,8 +1059,9 @@ iframe {
 }
 
 .filters-layout p {
-  display: block;
   position: relative;
+
+  display: block;
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -1091,13 +1092,13 @@ iframe {
 
 .filters-layout label::after {
   content: "";
-  display: block;
-  margin-right: 10px;
 
   position: absolute;
   top: 8px;
   left: 9px;
 
+  display: block;
+  margin-right: 10px;
   width: 8px;
   height: 8px;
 
@@ -1168,18 +1169,17 @@ iframe {
 .filters-features label::after {
   content: "";
 
-  display: block;
-  margin-right: 10px;
-
   position: absolute;
   left: 6px;
   top: 2px;
 
+  display: block;
+  margin-right: 10px;
   height: 11px;
   width: 21px;
 
-	border-left: 5px solid rgb(184, 184, 184);
-	border-bottom: 5px solid rgb(184, 184, 184);
+  border-left: 5px solid rgb(184, 184, 184);
+  border-bottom: 5px solid rgb(184, 184, 184);
 
 	transform: rotate(-45deg);
 }
@@ -1324,7 +1324,7 @@ iframe {
 
 .arrows .icon-down-arrow {
   display: inline-block;
-  margin-left: 36px;
+  margin-left: 35px;
   width: 0;
   height: 0;
 
@@ -1356,7 +1356,7 @@ iframe {
 .catalog-slider-controls {
   position: absolute;
   top: -27px;
-  left: 15px;
+  left: 13px;
   z-index: 99;
 
   width: 80px;
@@ -1380,8 +1380,8 @@ iframe {
 .product-card {
   position: relative;
 
-  max-width: 358px;
-  height: 574px;
+  max-width: 360px;
+  height: 615px;
   margin-bottom: 34px;
 
 	border: 1px solid rgb(238, 238, 238);
@@ -1390,6 +1390,10 @@ iframe {
   border-top-right-radius: 3px;
 
   cursor: pointer;
+}
+
+.product-card img {
+  height: 100%;
 }
 
 .product-card.sedona {
@@ -1405,9 +1409,9 @@ iframe {
 
   display: none;
   width: 358px;
-  min-height: 230px;
 
   vertical-align: top;
+  text-align: center;
 
   background-color: rgb(238, 238, 238);
 }
@@ -1468,10 +1472,10 @@ iframe {
   margin: 0 90px;
 }
 
-
 .card-btn {
   display: inline-block;
-  margin-top: 31px;
+  margin-top: 30px;
+  margin-bottom: 41px;
   padding: 16px 60px;
 
   font-family: inherit;
@@ -1565,7 +1569,7 @@ iframe {
               inset -3px -3px rgb(213, 213, 213);
 }
 
- /*Всплывающая форма*/
+ /*Всплывающая форма-------------------------------------------------------*/
 
 .modal-content {
   position: fixed;
@@ -1612,6 +1616,7 @@ iframe {
 
 .modal-content-show {
   display: block;
+
   animation-name: bouce;
   animation-duration: 0.8s;
 }
@@ -1734,6 +1739,7 @@ background-color: rgb(231, 66, 70);
 
 .text-form label {
   display: block;
+
   font: inherit;
   font-weight: bold;
 }
