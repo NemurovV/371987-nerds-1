@@ -285,7 +285,7 @@ body {
   color: rgb(227, 115, 118);
 
   background-color: rgb(215, 55, 59);
-  box-shadow: 0 -3px 0 0 rgb(193, 49, 67);
+  box-shadow: inset 0 3px 0 0 rgb(193, 49, 67);
 }
 
 .slide:nth-child(1) {
@@ -1410,10 +1410,6 @@ iframe {
   height: 100%;
 }
 
-.product-card.sedona {
-  border-top: 40px solid rgb(77, 77, 77);
-}
-
 .product-card .popup-card {
   display: inline-block;
   position: absolute;
@@ -1430,8 +1426,7 @@ iframe {
   background-color: rgb(238, 238, 238);
 }
 
-.product-card:hover .popup-card,
-.product-card .popup-card.active {
+.product-card:hover .popup-card {
   display: inline-block;
 
   vertical-align: top;
@@ -1587,13 +1582,14 @@ iframe {
 
 .modal-content {
   position: fixed;
-  bottom: 175px;
+  bottom: 176px;
   left: 50%;
+  z-index: 999;
 
   display: none;
   width: 960px;
-  margin-left: -480px;
-  padding: 80px 100px;
+  margin-left: -483px;
+  padding: 70px 100px;
 
   color: rgb(0, 0, 0);
 
@@ -1703,7 +1699,7 @@ iframe {
 
 .modal-content-title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 45px;
@@ -1712,6 +1708,7 @@ iframe {
 }
 
 .modal-content .username {
+  width: 360px;
   margin: 0;
   margin-right: 30px;
 }
@@ -1723,7 +1720,8 @@ iframe {
 
 .modal-content .btn {
   display: inline-block;
-  margin-top: 35px;
+  margin-top: 45px;
+  margin-bottom: 15px;
   padding: 17px 80px;
 
   color: rgb(255, 255, 255);
@@ -1762,15 +1760,16 @@ background-color: rgb(231, 66, 70);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: -10px;
 }
 
 .text-form .username input[type="text"],
 .text-form .e-mail input[type="email"],
 .text-form .report-title textarea[id="report"] {
-  width: 310px;
+  width: 360px;
   margin: 0;
   padding: 10px 15px;
-  padding-right: 40px;
 
   font-family: inherit;
   font-size: 16px;
@@ -1783,7 +1782,7 @@ background-color: rgb(231, 66, 70);
 }
 
 .text-form .report-title textarea[id="report"] {
-  width: 710px;
+  width: 760px;
 }
 
 .text-form .username input[type="text"]:hover,
