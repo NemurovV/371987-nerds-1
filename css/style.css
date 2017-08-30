@@ -253,6 +253,7 @@ body {
 
 .slide-text p {
   display: inline-block;
+  width: 430px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -368,6 +369,7 @@ body {
 
 .features p {
   display: inline-block;
+  width: 260px;
   margin: 0;
   margin-bottom: 31px;
   padding: 0;
@@ -1268,6 +1270,7 @@ iframe {
   margin: 0;
   margin-top: 2px;
   margin-left: 252px;
+  margin-right: auto;
   padding: 0;
 }
 
@@ -1338,7 +1341,6 @@ iframe {
 
 .arrows .icon-down-arrow {
   display: inline-block;
-  margin-left: 35px;
   width: 0;
   height: 0;
 
@@ -1408,6 +1410,11 @@ iframe {
 
 .product-card img {
   height: 100%;
+}
+
+.product-card a {
+  color:inherit;
+  text-decoration: none;
 }
 
 .product-card .popup-card {
@@ -1597,7 +1604,7 @@ iframe {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes bouce {
+@keyframes bounce {
   0% {
     transform: translateY(-2000px);
   }
@@ -1627,7 +1634,7 @@ iframe {
 .modal-content-show {
   display: block;
 
-  animation-name: bouce;
+  animation-name: bounce;
   animation-duration: 0.8s;
 }
 
