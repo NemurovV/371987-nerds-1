@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -65,12 +66,10 @@ body {
 }
 
 .main-header-logo:hover {
-  background: url("img/nerds-logo.png") no-repeat;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .main-header-logo:active {
-  background: url("img/nerds-logo.png") no-repeat;
   opacity: 0.3;
 }
 
@@ -872,25 +871,8 @@ iframe {
   color: rgb(0, 0, 0);
  }
 /*Вторая страница начало!!! inner---------------------------------*/
-/.logo-inner {
-  width: 160px;
-  min-height: 65px;
-  margin: 0;
-  margin-right: 42px;
-}
-
 .main-page .main-header {
   margin-bottom: 58px;
-}
-
-.logo-inner:hover {
-  background: url("img/nerds-logo.svg") no-repeat;
-  opacity: 1;
-}
-
-.logo-inner:active {
-  background: url("img/nerds-logo.svg") no-repeat;
-  opacity: 0.3;
 }
 
 .page-title {
@@ -1397,7 +1379,6 @@ iframe {
   position: relative;
 
   max-width: 360px;
-  height: 615px;
   margin-bottom: 34px;
 
 	border: 1px solid rgb(238, 238, 238);
@@ -1409,7 +1390,7 @@ iframe {
 }
 
 .product-card img {
-  height: 100%;
+  vertical-align: bottom;
 }
 
 .product-card a {
@@ -1471,7 +1452,7 @@ iframe {
 
   background-color: rgb(238, 238, 238);
   border-top: 40px solid rgb(77, 77, 77);
-  box-shadow: 0 3px 15px  3px rgba(0, 1, 1, 0.5);
+  box-shadow: 0 6px 15px  rgba(0, 0, 0, 0.25);
 }
 
 .product-card:active  {
@@ -1601,7 +1582,7 @@ iframe {
   color: rgb(0, 0, 0);
 
   background: rgb(255, 255, 255);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 @keyframes bounce {
@@ -1804,4 +1785,11 @@ background-color: rgb(231, 66, 70);
   color: rgb(0, 0, 0);
 
   border: 2px solid rgb(0, 0, 0);
+}
+
+.username input[type="text"]:invalid,
+.e-mail input[type="email"]:invalid {
+  color: rgb(255, 0, 0);
+
+  border: 2px solid rgb(255, 0, 0);
 }
