@@ -1,14 +1,11 @@
 /*script модального окна НАЧАЛО*/
 
 var link = document.querySelector(".modal-content-open");
-
 var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
-
 var form = popup.querySelector("form");
 var username = popup.querySelector("[name=username]");
 var email = popup.querySelector("[name=email]");
-
 var storage = localStorage.getItem("username");
 
 link.addEventListener("click", function(event) {
@@ -28,6 +25,7 @@ close.addEventListener("click", function(event) {
   popup.classList.remove("modal-content-show");
   popup.classList.remove("modal-error");
 });
+
 form.addEventListener("submit", function(event) {
   if (!username.value || !email.value) {
     event.preventDefault();
